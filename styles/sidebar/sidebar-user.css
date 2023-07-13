@@ -1,8 +1,27 @@
 #sidebar-user{
   height: 65px;
-  border-bottom: 1px solid rgb(234, 234, 234);
+  border-bottom: 1px solid #dddddd;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+#profile-container{
+  margin: 0px 15px;
+}
+
+#profile-pic{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+#username{
+  font-weight: 500;
+}
+
+#project-counter{
+  color: #aaaaaa;
+  font-size: 13px;
 }
