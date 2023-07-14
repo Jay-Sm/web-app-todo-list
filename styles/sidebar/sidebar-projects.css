@@ -44,7 +44,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: grey;
+  background-color: #808080;
   margin-left: 15px;
   margin-right: 20px;
 }
@@ -54,6 +54,7 @@
 }
 
 .task-counter {
+  color: #757575;
   margin-right: 20px;
 }
 

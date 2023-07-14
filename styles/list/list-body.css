@@ -1,4 +1,54 @@
 #list-body {
-  border-left: 1px solid#dddddd;
   height: 100%;
+  padding: 25px 20px;
+  border-left: 1px solid#dddddd;
+}
+
+.tasklist {
+  padding: 0px 20px;
+}
+
+.task {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+.task .top {
+  display: flex;
+  align-items: center;
+}
+
+.task-name {
+  border: none;
+  background-color: #00000000;
+  outline: none;
+}
+
+.checkbox-container {
+  margin: 0px 15px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 23px;
+}
+
+.taskState {
+  font-size: 12px;
+  color: #757575;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.taskStateColor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #808080;
+  margin-left: 15px;
+  margin-right: 20px;
 }

@@ -67,7 +67,7 @@
     </section>
     <section id="list">
       <div id="list-header">
-        <div id="title"><h2>TO-DO</h2></div>
+        <div id="title"><h2>To-Do</h2></div>
         <div id="list-icon-container">
           <div><img id="plus-icon" src="assets/icons/list/plus-icon.svg" alt="" /></div>
           <div><img id="collapseList-icon" src="assets/icons/list/collapseList-icon.svg" alt="" /></div>
@@ -75,8 +75,75 @@
         </div>
       </div>
       <div id="list-body">
-        <div>stuff</div>
+        <div>
+          <h1>projectName</h1>
+          <div class="tasklist">
+            <div class="task">
+              <div class="top">
+                <div class="checkbox-container" style="display: flex; align-items: center">
+                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
+                </div>
+                <input class="task-name" type="text" placeholder="Task Name Here" />
+              </div>
+              <div class="taskState">
+                taskState
+                <div class="taskStateColor"></div>
+              </div>
+            </div>
+            <div class="task">
+              <div class="top">
+                <div class="checkbox-container" style="display: flex; align-items: center">
+                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
+                </div>
+                <input class="task-name" type="text" placeholder="Task Name Here" />
+              </div>
+              <div class="taskState">
+                taskState
+                <div class="taskStateColor"></div>
+              </div>
+            </div>
+            <div class="task">
+              <div class="top">
+                <div class="checkbox-container" style="display: flex; align-items: center">
+                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
+                </div>
+                <input class="task-name" type="text" placeholder="Task Name Here" />
+              </div>
+              <div class="taskState">
+                taskState
+                <div class="taskStateColor"></div>
+              </div>
+            </div>
+            <div class="task">
+              <div class="top">
+                <div class="checkbox-container" style="display: flex; align-items: center">
+                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
+                </div>
+                <input class="task-name" type="text" placeholder="Task Name Here" />
+              </div>
+              <div class="taskState">
+                taskState
+                <div class="taskStateColor"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <script>
+      const bttn = document.querySelectorAll(".checkbox-container");
+
+      bttn.forEach((elem) => {
+        elem.addEventListener("click", () => {
+          const img = elem.querySelector("img");
+          if (img.src === "http://127.0.0.1:5500/assets/icons/list/checkBox-icon.svg") {
+            img.src = "assets/icons/list/checkBoxActive-icon.svg";
+          } else {
+            img.src = "assets/icons/list/checkBox-icon.svg";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
