@@ -8,13 +8,9 @@ body {
 
   display: flex;
   flex-direction: row;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 
   overflow: hidden;
-}
-
-h1{
-  margin: 0px;
 }
 
 p {

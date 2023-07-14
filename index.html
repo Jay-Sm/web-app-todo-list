@@ -14,136 +14,40 @@
 
     <link rel="stylesheet" href="styles/general.css" />
 
-    <link rel="stylesheet" href="styles/sidebar/sidebar-general.css" />
-    <link rel="stylesheet" href="styles/sidebar/sidebar-user.css" />
-    <link rel="stylesheet" href="styles/sidebar/sidebar-header.css" />
-    <link rel="stylesheet" href="styles/sidebar/sidebar-projects.css" />
-
     <link rel="stylesheet" href="styles/list/list-general.css" />
     <link rel="stylesheet" href="styles/list/list-body.css" />
     <link rel="stylesheet" href="styles/list/list-header.css" />
   </head>
   <body>
-    <section id="sidebar">
-      <div id="sidebar-header">
-        <div id="menu-icon-container"><img id="menu-icon" src="assets/icons/sidebar/hamburger-icon.svg" alt="" /></div>
-        <div id="sidebar-icon-container">
-          <div><img id="search-icon" src="assets/icons/sidebar/search-icon.svg" alt="" /></div>
-          <div><img id="notify-icon" src="assets/icons/sidebar/notification-icon.svg" alt="" /></div>
-          <div><img id="settings-icon" src="assets/icons/sidebar/settings-icon.svg" alt="" /></div>
-        </div>
-      </div>
-      <div id="sidebar-user">
-        <div id="profile-container"><img id="profile-pic" src="assets/icons/sidebar/guest-icon.png" alt="" /></div>
-        <div>
-          <p id="username">Guest</p>
-          <p id="project-counter">0</p>
-        </div>
-      </div>
-      <div id="project-list">
-        <div id="projects-header">
-          <p>Projects</p>
-          <img src="assets/icons/sidebar/expand-icon.svg" alt="" />
-        </div>
-        <div id="projects-container">
-          <div class="project">
-            <div class="project-color"></div>
-            <p class="project-title">projectName</p>
-            <p class="task-counter">#</p>
-          </div>
-          <div class="project">
-            <div class="project-color"></div>
-            <p class="project-title">projectName</p>
-            <p class="task-counter">#</p>
-          </div>
-          <div class="project">
-            <div class="project-color"></div>
-            <p class="project-title">projectName</p>
-            <p class="task-counter">#</p>
-          </div>
-        </div>
-        <button><img src="assets/icons/sidebar/plus-icon.svg" alt="" /> Add Project</button>
-      </div>
-    </section>
     <section id="list">
       <div id="list-header">
         <div id="title"><h2>To-Do</h2></div>
         <div id="list-icon-container">
-          <div><img id="plus-icon" src="assets/icons/list/plus-icon.svg" alt="" /></div>
+          <div><img id="plus-icon" class="js-plus-icon" src="assets/icons/list/plus-icon.svg" alt="" /></div>
           <div><img id="collapseList-icon" src="assets/icons/list/collapseList-icon.svg" alt="" /></div>
           <div><img id="threeDot-icon" src="assets/icons/list/threeDot-icon.svg" alt="" /></div>
         </div>
       </div>
       <div id="list-body">
-        <div>
-          <h1>projectName</h1>
-          <div class="tasklist">
-            <div class="task">
-              <div class="top">
-                <div class="checkbox-container" style="display: flex; align-items: center">
-                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
-                </div>
-                <input class="task-name" type="text" placeholder="Task Name Here" />
+        <input id="taskTitle" type="text" placeholder="Title Here" />
+        <div class="tasklist js-tasklist">
+          <!-- <div class="task">
+            <div class="top">
+              <div class="checkbox-container">
+                <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
               </div>
-              <div class="taskState">
-                taskState
-                <div class="taskStateColor"></div>
-              </div>
+              <input class="task-name" type="text" placeholder="Task Name Here" />
             </div>
-            <div class="task">
-              <div class="top">
-                <div class="checkbox-container" style="display: flex; align-items: center">
-                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
-                </div>
-                <input class="task-name" type="text" placeholder="Task Name Here" />
-              </div>
-              <div class="taskState">
-                taskState
-                <div class="taskStateColor"></div>
-              </div>
+            <div class="taskState">
+              <p>Idle</p>
+              <div class="taskStateColor"></div>
             </div>
-            <div class="task">
-              <div class="top">
-                <div class="checkbox-container" style="display: flex; align-items: center">
-                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
-                </div>
-                <input class="task-name" type="text" placeholder="Task Name Here" />
-              </div>
-              <div class="taskState">
-                taskState
-                <div class="taskStateColor"></div>
-              </div>
-            </div>
-            <div class="task">
-              <div class="top">
-                <div class="checkbox-container" style="display: flex; align-items: center">
-                  <img class="checkbox" src="assets/icons/list/checkBox-icon.svg" alt="" />
-                </div>
-                <input class="task-name" type="text" placeholder="Task Name Here" />
-              </div>
-              <div class="taskState">
-                taskState
-                <div class="taskStateColor"></div>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
-    <script>
-      const bttn = document.querySelectorAll(".checkbox-container");
-
-      bttn.forEach((elem) => {
-        elem.addEventListener("click", () => {
-          const img = elem.querySelector("img");
-          if (img.src === "http://127.0.0.1:5500/assets/icons/list/checkBox-icon.svg") {
-            img.src = "assets/icons/list/checkBoxActive-icon.svg";
-          } else {
-            img.src = "assets/icons/list/checkBox-icon.svg";
-          }
-        });
-      });
-    </script>
+    <script src="javascripts/add-task.js"></script>
+    <script src="javascripts/task-state.js"></script>
   </body>
 </html>
