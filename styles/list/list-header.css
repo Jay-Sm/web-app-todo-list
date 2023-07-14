@@ -33,8 +33,9 @@
   cursor: pointer;
 }
 
-#collapseList-icon {
+#checkTasks-icon {
   width: 30px;
+  cursor: pointer;
 }
 
 #threeDot-icon {

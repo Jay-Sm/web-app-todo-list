@@ -6,6 +6,7 @@ addButton.addEventListener("click", () => {
   tasklist.appendChild(newTask);
 
   newTask.classList.add("task");
+  newTask.classList.add("js-task");
   newTask.innerHTML = `
     <div class="top">
       <div class="checkbox-container">
