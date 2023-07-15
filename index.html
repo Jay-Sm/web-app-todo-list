@@ -24,12 +24,19 @@
         <div id="title"><h2>To-Do</h2></div>
         <div id="list-icon-container">
           <div><img id="plus-icon" class="js-plus-icon" src="assets/icons/list/plus-icon.svg" alt="" /></div>
-          <div><img id="checkTasks-icon" class="js-checkTasks" src="assets/icons/list/checkTasks-icon.svg" alt="" /></div>
-          <div><img id="threeDot-icon" src="assets/icons/list/threeDot-icon.svg" alt="" /></div>
+          <div>
+            <img id="checkTasks-icon" class="js-checkTasks" src="assets/icons/list/checkTasks-icon.svg" alt="" />
+          </div>
+          <div>
+            <img id="threeDot-icon" src="assets/icons/list/threeDot-icon.svg" alt="" />
+            <div id="options-menu" class="menu-visible js-options-menu">
+              <div id="delete-button">Delete Tasks</div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="list-body">
-        <input id="taskTitle" type="text" placeholder="Title Here" />
+        <input id="taskTitle" type="text" placeholder="Title Here" value="" />
         <div class="tasklist js-tasklist">
           <!-- <div class="task">
             <div class="top">
@@ -49,5 +56,7 @@
 
     <script src="javascripts/add-task.js"></script>
     <script src="javascripts/check-all-tasks.js"></script>
+    <script src="javascripts/option-menu.js"></script>
+    <script src="javascripts/delete-tasks.js"></script>
   </body>
 </html>

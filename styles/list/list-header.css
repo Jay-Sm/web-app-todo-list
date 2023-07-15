@@ -40,4 +40,35 @@
 
 #threeDot-icon {
   width: 30px;
+  cursor: pointer;
+}
+
+#options-menu {
+  top: -1000px;
+  right: 20px;
+  width: 170px;
+  height: 200px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  opacity: 0;
+  transition: opacity ease 0.1s;
+}
+
+#options-menu.menu-visible {
+  top: 40px;
+  opacity: 1;
+}
+
+#delete-button {
+  margin-top: 15px;
+  color: #e63c3c;
+  cursor: pointer;
 }
